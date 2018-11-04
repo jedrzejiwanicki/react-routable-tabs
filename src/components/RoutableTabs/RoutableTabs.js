@@ -42,12 +42,13 @@ class RoutableTabs extends Component {
 	}
 
 	render() {
+		const { className } = this.props;
 		return (
 			<div>
 				{this.default && !this.hasSelectedTab && (
 					<Redirect to={this.default.path} />
 				)}
-				<nav>
+				<nav className={className}>
 					{this.routes.map(({ props: { title, className, selectedClassName }, path }) => (
 						<Link to={path} className={cx(className, { [selectedClassName]: this.isSelected(path)})}>
 							{title}

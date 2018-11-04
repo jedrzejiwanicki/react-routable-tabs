@@ -1,0 +1,17 @@
+.tab {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-bottom: 2px solid transparent
+}
+
+.tab--selected {
+    border-bottom-color: burlywood;
+}
+
+.tabs {
+    display: flex;
+}
